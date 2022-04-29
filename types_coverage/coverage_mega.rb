@@ -1,13 +1,10 @@
 # frozen_string_literal: true
 
 # Class for Mega Coverage
-class CoverageMega
-  attr_accessor :type_coverage, :sell_in, :price
+class CoverageMega < Coverage
 
   def initialize(data)
-    @type_coverage = data[0]
-    @sell_in = data[1].delete(' ')
-    @price = data[2].delete(' ')
+    super(data)
   end
 
   def processing
