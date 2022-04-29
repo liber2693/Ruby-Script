@@ -2,11 +2,6 @@
 
 # Class for Full Coverage
 class CoverageFull < Coverage
-
-  def initialize(data)
-    super(data)
-  end
-
   def processing
     final_price = sell_in <= 0 ? price + 2 : price + 1
     final_price = 50 if price >= 50

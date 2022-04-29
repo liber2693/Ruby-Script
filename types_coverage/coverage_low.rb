@@ -2,11 +2,6 @@
 
 # Class for Low Coverage
 class CoverageLow < Coverage
-
-  def initialize(data)
-    super(data)
-  end
-
   def processing
     final_price = sell_in <= 0 ? 0 : price - 1
     final_sell_in = sell_in - 1

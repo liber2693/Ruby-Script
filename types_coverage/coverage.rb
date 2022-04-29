@@ -9,5 +9,4 @@ class Coverage
     @sell_in = data[1].to_i
     @price = data[2].to_i
   end
-
 end
