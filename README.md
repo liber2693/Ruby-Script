@@ -1,23 +1,17 @@
-Es necesario tener instalado Ruby 2.6.2.
+It is necessary to have Ruby 2.6.2 installed.
 
-Para ejecutar el script es necesario, guardar el proyecto en una carpeta cualquiera.
-Descomprimir el archivo ZIP dentro de esta carpeta cualquiera.
+To run the script it is necessary to save the project in any folder. Unzip the ZIP file inside this folder.
 
-Desde la consola, entrar a la carpeta con el comando " cd 'nombre del proyecto' ".
+From the console, enter the folder with the command " cd 'project name' ".
 
-Ejecutar un " bundle install " para descargar las dependencias.
+Execute a "bundle install" to download the dependencies.
 
-Luego correr el script con el comando " ruby init_script.rb ".
+Then run the script with the command " ruby init_script.rb ".
 
-En este momento el script comenzara a correr. En primer lugar le pedira la cantidad
-de dias en los cuales quiere generar la data correspondiente. Esta cantidad esta
-validada entre 1 y 30 dias. NO puede estar vacia. Cualquier error hara que el
-script termine su ejecucion, enviando un mensaje de lo sucedido.
+At this point the script will start running. First it will ask you the number of days in which you want to generate the corresponding data. This amount is validated between 1 and 30 days. It can NOT be empty. Any error will cause the script to terminate its execution, sending a message of what happened.
 
-En segundo lugar el nombre del archivo sample. En este caso se llama " sample.txt ".
-Al igual que el anterior, tambien esta validado. Por ejemplo, el archivo con un nombre que no exista.
+Secondly the name of the sample file. In this case it is called " sample.txt ". Like the previous one, it is also validated. For example, the file with a name that does not exist.
 
-Al terminar de correr el script (tarda unas milesimas de segundos), se generara un archivo txt, dentro de la carpeta tmp, que contendra la salida del archivo.
+When the script finishes running (it takes a few thousandths of seconds), a txt file will be generated, inside the tmp folder, containing the output of the file.
 
-En cuanto a los SPECS, se usa la gema RSPEC. Esto puede verificarse con el comando
-" bundle exec rspec spec/spec_script.rb ".
+As for SPECS, the RSPEC gem is used. This can be verified with the command "bundle exec rspec spec/spec_script.rb".
