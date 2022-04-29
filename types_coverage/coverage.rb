@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Father class for constructor
 class Coverage
   attr_accessor :type_coverage, :sell_in, :price
 
